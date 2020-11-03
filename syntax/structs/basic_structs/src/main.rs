@@ -42,7 +42,12 @@ fn main() {
     u.die();
 
     // this causes error because user is consumed by the function because of not using a pointer
+    
     // u.die();
+
+    // Consume pretty much means: "to take and not give back".
+
+    // So if a function consumes a value. Ownership is moved into the function and the caller can not use that value again.
 
     
 }
