@@ -1,3 +1,3 @@
-# rust
+# Rust
 
-programs written in rust
+This repository contains programs written in rust
