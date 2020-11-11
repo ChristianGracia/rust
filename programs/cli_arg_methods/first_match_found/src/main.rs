@@ -1,5 +1,5 @@
 
-// use arguments in run command annd this will say hi to any animal whos letter starts with c
+// use arguments in run command annd this will say hi to the first animal whos letter starts with c
 //run with cargo run -- dog cat horse lizard
 
 use std::env::args;
