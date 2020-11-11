@@ -9,20 +9,30 @@ pub struct User {
 
 #[derive(Debug)]
 pub enum Games {
-    GameId(i32), GameNumber(i32), GameUser(User)
+    GameId(i32), GameNumber(i32), GameUser(User), GameMessage(i32, String)
 }
 
 
 fn main() {
-    let t = Games::GameId(3);
+    use self::Games::*;
+    // allows not using Games:: ex. 
+    //  let c = Games::GameUser(User{size: 2, count: 3, name: "cg".to_string()});
+
+    let t = GameId(3);
+
+    let d =  GameMessage(2, "dog".to_string());
+
     println!("id {:?}", t);
 
-    let c = Games::GameUser(User{size: 2, count: 3, name: "cg".to_string()});
- 
+    let c = GameUser(User{size: 2, count: 3, name: "cg".to_string()});
 
-    match t {
-        Games::GameId(n) => println!("This game has id {}", n),
-        d => println!("{:?}", d),
+    if let GameId(n) = t {
+        println!("n = {}", n);
     }
+
+    if let GameMessage(n, s) = d {
+        println!("n = {}, s = {}", n, s);
+    }
+
 
 }
