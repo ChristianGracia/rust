@@ -1,1 +1,3 @@
-This directory contains rust cli programs that read arguments given when ran with cargo run --
+# Rust CLI arg readers
+
+This directory contains rust programs that read command line arguments given when ran with cargo run --
