@@ -5,15 +5,7 @@
 use std::env;
 
 fn main() {
-
-    let args: Vec<String> = env::args().collect();
-
-    if args.len() > 0 {
-        match_responder(args, 'c');
-    }
-
-
-
+    match_responder(env::args().collect(), 'c');
 }
 
 fn match_responder(args: Vec<String>, letter: char) -> () {
