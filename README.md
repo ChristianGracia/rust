@@ -4,6 +4,8 @@ This repository contains programs written in rust
 
 
 
- If  you have rust installed, you can run anything here the following command run in a bash terminal
+ If  you have rust installed and clone this repo, you can run anything here the following command run in a wanted directory bash terminal
  
- **git clone git@github.com:ChristianGracia/rust.git && cargo build && cargo**
+ 
+ 
+ **cargo build && cargo run**
